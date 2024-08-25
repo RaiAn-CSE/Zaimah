@@ -1,6 +1,6 @@
 import mainImg from "../assets/mainImg.png"
 import manImg from "../assets/manImg.jpeg"
-// import { IoIosChatboxes } from "react-icons/io";
+import { IoIosChatboxes } from "react-icons/io";
 
 const HomePage = () => {
     return (
@@ -35,7 +35,7 @@ const HomePage = () => {
                                     <img className="h-10 w-10 rounded-full absolute top-0 left-[125px] border" src={manImg} alt="image profile" />
                                 </div>
                                 <div className="col-span-3">
-                                    <button className="bg-[#232425] text-white px-5 py-2 text-sm rounded-lg">Chat <span></span></button>
+                                    <button className="bg-[#232425] text-white px-5 py-2 text-sm rounded-lg flex items-center ">Chat <span className="ml-2"><IoIosChatboxes className="text-[20px]" /></span></button>
                                 </div>
                                 <div className="col-span-4">
                                     <button className="bg-[#FD6058] text-white px-5 py-2 text-sm rounded-lg">Delete Event</button>
