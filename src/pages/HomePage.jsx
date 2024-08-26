@@ -1,6 +1,21 @@
 import mainImg from "../assets/mainImg.png"
 import manImg from "../assets/manImg.jpeg"
 import { IoIosChatboxes } from "react-icons/io";
+import UserItem from "../miniComponent/UserItem";
+
+const userData = [
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+    { name: "Raian Rai", location: "Location", imgSrc: manImg },
+];
+
+
+// const handleRemove = (index) => {
+//     console.log(`Remove user at index ${index}`);
+// };
 
 const HomePage = () => {
     return (
@@ -52,95 +67,15 @@ const HomePage = () => {
                                 <p className="text-sm font-semibold px-4 py-3 bg-[#E2E3E4]">
                                     People going to this event
                                 </p>
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
+                                {userData.map((user, index) => (
+                                    <UserItem
+                                        key={index}
+                                        name={user.name}
+                                        location={user.location}
+                                        imgSrc={user.imgSrc}
+                                    // onRemove={() => handleRemove(index)}
                                     />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
-
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
-                                    />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
-
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
-                                    />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
-
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
-                                    />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
-
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
-                                    />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
-
-                                <div className="px-4 py-2 flex items-center border-b-2">
-                                    <img
-                                        className="h-10 w-10 rounded-full"
-                                        src={manImg}
-                                        alt="image profile"
-                                    />
-                                    <div className="ml-4">
-                                        <p>Raian Rai</p>
-                                        <p className="text-xs">Location</p>
-                                    </div>
-                                    <button className="ml-auto bg-[#FD6356] text-white px-4 py-2 rounded">
-                                        Remove
-                                    </button>
-                                </div>
+                                ))}
                             </div>
 
                         </div>
