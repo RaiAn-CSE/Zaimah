@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ProfileImageStack = ({ images }) => {
     return (
-        <div className="relative col-span-5 basis-[40%]">
+        <div className="relative">
             {images.map((imgSrc, index) => (
                 <img
                     key={index}
