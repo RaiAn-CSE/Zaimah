@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const UserItem = ({ name, location, imgSrc, onRemove }) => {
     return (
@@ -16,6 +16,13 @@ const UserItem = ({ name, location, imgSrc, onRemove }) => {
             </button>
         </div>
     );
+};
+
+UserItem.propTypes = {
+    name: PropTypes.string.isRequired,
+    location: PropTypes.string,       // Not required, can be null or undefined
+    imgSrc: PropTypes.string.isRequired,
+    onRemove: PropTypes.func.isRequired,
 };
 
 export default UserItem;
