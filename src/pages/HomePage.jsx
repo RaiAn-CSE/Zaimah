@@ -23,7 +23,7 @@ const HomePage = () => {
     return (
         <section>
             <div className="h-full w-full flex lg:flex-row flex-col">
-                <div className="basis-[25%] bg-[#FDFCFA]">
+                <div className="basis-[25%]">
                     <div className="flex">
                         <div className="basis-[75%] p-4 bg-blue-500">75%</div>
                         <div className="basis-[25%] p-4 bg-green-500">25%</div>
