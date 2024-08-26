@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite Live Link :https://zaimahtechnologyltd.vercel.app/
 
 Background Image set : 
 
@@ -11,3 +11,7 @@ Go to ---> tailwind.config.js:
 
 
 className="bg-myBg bg-cover bg-center h-screen"
+
+
+
+Done 
